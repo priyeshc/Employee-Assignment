@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.3.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_3_0.dtd">
+<service-builder dependency-injector="ds"
+	package-path="com.liferay.employee.assignment">
+	<namespace>Employee</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" 
+		remote-service="false" session-factory="sampleSessionFactory" table="foo" 
+		tx-manager="sampleTransactionManager uuid="true""> -->
+	<entity name="Employee" local-service="true"
+		remote-service="true" uuid="true">
+		<!-- PK fields -->
+		<column name="Emp_Id" type="long" primary="true"></column>
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+
+
+		<column name="Name" type="String"></column>
+		<column name="Job_Title" type="String"></column>
+		<column name="Phone_No" type="String"></column>
+		<column name="Salary" type="Float"></column>
+		<column name="Dept_Id" type="long"></column>
+		<column name="Project_Id" type="long"></column>
+
+
+
+		<!-- Finder methods -->
+
+		<finder name="Name_salary" return-type="Collection">
+			<finder-column name="Name" />
+			<finder-column name="Salary" />
+		</finder>
+
+
+	</entity>
+	<entity name="Department" local-service="true" remote-service="true">
+		<column name="Dept_Id" type="long" primary="true"></column>
+		<column name="Dept_Name" type="String"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+	</entity>
+	<entity name="Project" local-service="true" remote-service="true">
+		<column name="Project_Id" type="long" primary="true"></column>
+		<column name="Project_Name" type="String"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+	</entity>
+</service-builder>

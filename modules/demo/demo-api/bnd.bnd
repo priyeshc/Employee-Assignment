@@ -1,0 +1,10 @@
+Bundle-Name: demo-api
+Bundle-SymbolicName: com.demo.liferay.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.demo.liferay.exception,\
+	com.demo.liferay.model,\
+	com.demo.liferay.service,\
+	com.demo.liferay.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../demo-service/service.xml

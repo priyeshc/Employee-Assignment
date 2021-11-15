@@ -1,0 +1,4 @@
+Bundle-Name: EmployeeApi
+Bundle-SymbolicName: com.liferay.assignment.empApi
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.assignment.empApi.api

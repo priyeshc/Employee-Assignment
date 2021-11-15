@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.employee.assignment.model.Department">
+		<field name="Dept_Id" type="long" />
+		<field name="Dept_Name" type="String" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.liferay.employee.assignment.model.Employee">
+		<field name="uuid" type="String" />
+		<field name="Emp_Id" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="Name" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="Job_Title" type="String" />
+		<field name="Phone_No" type="String" />
+		<field name="Salary" type="Float" />
+		<field name="Dept_Id" type="long" />
+		<field name="Project_Id" type="long" />
+	</model>
+	<model name="com.liferay.employee.assignment.model.Project">
+		<field name="Project_Id" type="long" />
+		<field name="Project_Name" type="String" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

@@ -1,0 +1,10 @@
+Bundle-Name: Emp-api
+Bundle-SymbolicName: com.liferay.employee.assignment.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.employee.assignment.exception,\
+	com.liferay.employee.assignment.model,\
+	com.liferay.employee.assignment.service,\
+	com.liferay.employee.assignment.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../Emp-service/service.xml
