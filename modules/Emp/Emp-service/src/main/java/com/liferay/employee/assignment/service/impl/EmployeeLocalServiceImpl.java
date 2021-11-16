@@ -130,7 +130,7 @@ public class EmployeeLocalServiceImpl extends EmployeeLocalServiceBaseImpl {
 
 		return employeePersistence.findByName_salary(name, salary);
 	}
-
+	
 	public List<Employee> getEmployeeByJT() {
 
 		/*
