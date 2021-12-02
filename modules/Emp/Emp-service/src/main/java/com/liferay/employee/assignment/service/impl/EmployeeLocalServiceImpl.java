@@ -145,5 +145,14 @@ public class EmployeeLocalServiceImpl extends EmployeeLocalServiceBaseImpl {
 				.dynamicQuery(dynamicQuery().add(RestrictionsFactoryUtil.eq("Job_Title", "L1" )));
 		return employeeList;
 	}
+	
+	
+	public List<Employee> getAllEmployees(){
+		
+		System.out.println("List Employee " + employeePersistence.findAll());
+		
+		return employeePersistence.findAll();
+		
+	}
 
 }

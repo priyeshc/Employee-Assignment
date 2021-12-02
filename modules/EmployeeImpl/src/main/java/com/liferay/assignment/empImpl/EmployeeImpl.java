@@ -9,6 +9,7 @@ import com.liferay.portal.kernel.service.ServiceContext;
 import java.util.List;
 
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 
 /**
  * @author Argil DX
@@ -18,6 +19,7 @@ import org.osgi.service.component.annotations.Component;
 }, service = EmployeeApi.class)
 public class EmployeeImpl implements EmployeeApi {
 
+	@Reference
 	EmployeeLocalService empLocalService;
 
 	@Override
@@ -46,6 +48,12 @@ public class EmployeeImpl implements EmployeeApi {
 	public List<Employee> getEmployeeByJT() {
 		// TODO Auto-generated method stub
 		return empLocalService.getEmployeeByJT();
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return empLocalService.getAllEmployees();
 	}
 
 	// TODO enter required service methods

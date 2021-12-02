@@ -2,4 +2,5 @@ dependencies {
 	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
 	compileOnly project(":modules:EmployeeApi")
 	compileOnly project(":modules:Emp:Emp-service")
+	compileOnly project(":modules:Emp:Emp-api")
 }

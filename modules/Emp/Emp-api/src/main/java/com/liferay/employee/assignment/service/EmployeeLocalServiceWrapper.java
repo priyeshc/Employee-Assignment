@@ -251,6 +251,13 @@ public class EmployeeLocalServiceWrapper
 		return _employeeLocalService.getActionableDynamicQuery();
 	}
 
+	@Override
+	public java.util.List<com.liferay.employee.assignment.model.Employee>
+		getAllEmployees() {
+
+		return _employeeLocalService.getAllEmployees();
+	}
+
 	/**
 	 * Returns the employee with the primary key.
 	 *

@@ -15,6 +15,7 @@ public interface EmployeeApi  {
 	public Employee deleteEmployee(long Emp_Id) throws PortalException;
 	public Employee getEmployee(long Emp_Id) throws PortalException;
 	public List<Employee> getEmployeeByJT();
+	public List<Employee> getAllEmployees();
 
 		
 	

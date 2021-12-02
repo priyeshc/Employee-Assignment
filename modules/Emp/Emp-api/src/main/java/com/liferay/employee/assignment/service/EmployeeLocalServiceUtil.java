@@ -228,6 +228,10 @@ public class EmployeeLocalServiceUtil {
 		return getService().getActionableDynamicQuery();
 	}
 
+	public static List<Employee> getAllEmployees() {
+		return getService().getAllEmployees();
+	}
+
 	/**
 	 * Returns the employee with the primary key.
 	 *
