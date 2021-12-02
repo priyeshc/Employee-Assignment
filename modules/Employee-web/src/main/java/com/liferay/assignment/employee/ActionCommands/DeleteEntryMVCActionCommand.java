@@ -13,7 +13,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 @Component(property = { "javax.portlet.name=" + EmployeeWebPortletKeys.EMPLOYEE,
-"mvc.command.name=addEntry" }, service = MVCActionCommand.class)
+"mvc.command.name=deleteEntry" }, service = MVCActionCommand.class)
 
 public class DeleteEntryMVCActionCommand implements MVCActionCommand {
 
